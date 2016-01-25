@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#c5c5c5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Add Task"
+        android:id="@+id/textView4"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="0dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/taskNameIn"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/textView8"
+        android:layout_alignStart="@+id/textView4"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Class"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/taskNameIn"
+        android:layout_alignStart="@+id/taskNameIn"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="0dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Due Date"
+        android:id="@+id/textView6"
+        android:layout_marginTop="17dp"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_marginLeft="0dp"
+        android:layout_below="@+id/spinner" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/dueDateIn"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="22dp"
+        android:layout_toStartOf="@+id/schedDateIn" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/addBtn"
+        android:layout_marginTop="26dp"
+        android:layout_toEndOf="@+id/textView5"
+        android:layout_below="@+id/dueDateIn"
+        android:layout_alignParentEnd="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back To Tasks"
+        android:id="@+id/taskList"
+        android:layout_alignTop="@+id/addBtn"
+        android:layout_toEndOf="@+id/addBtn"
+        android:layout_marginStart="39dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Name"
+        android:id="@+id/textView8"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true" />
+
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Scheduled Date"
+        android:id="@+id/textView11"
+        android:layout_marginLeft="0dp"
+        android:layout_above="@+id/dueDateIn"
+        android:layout_alignStart="@+id/taskList" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/schedDateIn"
+        android:layout_alignBottom="@+id/dueDateIn"
+        android:layout_alignStart="@+id/textView11" />
+
+</RelativeLayout><!-- From: file:/C:/Users/Surya/AndroidStudioProjects/StudentHelp/app/src/main/res/layout/add_task.xml -->

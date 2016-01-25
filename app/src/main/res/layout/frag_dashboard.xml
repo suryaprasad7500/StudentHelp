@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <!--<LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@drawable/banner"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Dashboard"
+            android:textColor="#FFFFFF"
+            />
+    </LinearLayout>-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="Today"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="27dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="26dp"
+        android:layout_height="450px"
+        android:layout_width="1000px"
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:weightSum="1"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/dayClass"
+            android:layout_width="475px"
+            android:layout_height="match_parent"
+            android:background="#0099FF"
+            android:elevation="10dp"
+            >
+            <TextView
+                android:id="@+id/dayClassHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Classes"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="40dp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/dayClassText"
+                android:layout_marginLeft="20dp"
+                android:textColor="#FFFFFF"
+                android:textSize = "15dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/dayTasks"
+            android:layout_width="475px"
+            android:layout_height="match_parent"
+            android:background="#0099FF"
+            android:layout_marginLeft="20px"
+            android:elevation="10dp"
+            >
+            <TextView
+                android:id="@+id/dayTasksHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="40dp"
+                android:text="Tasks/Exams"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/dayTasksText"
+                android:layout_marginLeft="20dp"
+                android:textColor="#FFFFFF"
+                android:textSize = "15dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Week"
+        android:id="@+id/textView3"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_height="450px"
+        android:layout_width="1000px"
+        android:id="@+id/linearLayout2"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/weekClass"
+            android:layout_width="475px"
+            android:layout_height="match_parent"
+            android:background="#0099FF"
+            android:elevation="10dp">
+            <TextView
+                android:id="@+id/weekClassHead"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:text="Classes"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/weekClassText"
+                android:layout_marginLeft="20dp"
+                android:textColor="#FFFFFF"
+                android:textSize = "15dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/weekTasks"
+            android:layout_width="475px"
+            android:layout_height="match_parent"
+            android:background="#0099FF"
+            android:elevation="10dp"
+            android:layout_marginLeft="20px">
+            <TextView
+                android:id="@+id/weekTasksHead"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:text="Tasks/Exams"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/weekTasksText"
+                android:layout_marginLeft="20dp"
+                android:textColor="#FFFFFF"
+                android:textSize = "15dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sync"
+        android:id="@+id/requestBackup"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

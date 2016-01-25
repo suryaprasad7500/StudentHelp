@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp">
+    <!--android:background="@android:drawable/dialog_holo_light_frame"-->
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="55dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/listitemcolor" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Exam Name"
+        android:id="@+id/examNameView"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Room"
+        android:id="@+id/examRoomView"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_alignParentEnd="true"
+        android:textColor="#8e8e8e"
+        android:paddingRight="3dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Class"
+        android:id="@+id/examClassView"
+        android:textColor="#8e8e8e"
+        android:layout_alignTop="@+id/examRoomView"
+        android:layout_alignStart="@+id/examNameView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Date"
+        android:id="@+id/examDateView"
+        android:textColor="#8e8e8e"
+        android:layout_alignBottom="@+id/examNameView"
+        android:layout_alignParentEnd="true"
+        android:paddingRight="3dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Time"
+        android:id="@+id/examTimeView"
+        android:textColor="#8e8e8e"
+        android:layout_alignTop="@+id/examClassView"
+        android:layout_toEndOf="@+id/examClassView"
+        android:layout_marginLeft="5dp" />
+
+</RelativeLayout><!-- From: file:/C:/Users/Surya/AndroidStudioProjects/StudentHelp/app/src/main/res/layout/examlistlayoul.xml -->

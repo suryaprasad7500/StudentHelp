@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#c5c5c5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Add Class"
+        android:id="@+id/textView4"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="0dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/classNameIn"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/textView8"
+        android:layout_alignStart="@+id/textView4"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Days"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/classNameIn"
+        android:layout_alignStart="@+id/classNameIn"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="0dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="M"
+        android:id="@+id/mondayToggle"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:checked="false"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="T"
+        android:id="@+id/tuesdayToggle"
+        android:checked="false"
+        android:layout_alignTop="@+id/mondayToggle"
+        android:layout_toEndOf="@+id/textView5" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="W"
+        android:id="@+id/wednesdayToggle"
+        android:checked="false"
+        android:layout_alignTop="@+id/tuesdayToggle"
+        android:layout_toEndOf="@+id/textView4"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Th"
+        android:id="@+id/thursdayToggle"
+        android:checked="false"
+        android:layout_alignTop="@+id/wednesdayToggle"
+        android:layout_toEndOf="@+id/wednesdayToggle"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="F"
+        android:id="@+id/fridayToggle"
+        android:checked="false"
+        android:layout_alignTop="@+id/thursdayToggle"
+        android:layout_toEndOf="@+id/thursdayToggle"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sa"
+        android:id="@+id/saturdayToggle"
+        android:checked="false"
+        android:layout_alignTop="@+id/fridayToggle"
+        android:layout_toEndOf="@+id/fridayToggle"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Su"
+        android:id="@+id/sundayToggle"
+        android:checked="false"
+        android:layout_alignTop="@+id/saturdayToggle"
+        android:layout_toEndOf="@+id/saturdayToggle"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Start Time"
+        android:id="@+id/textView6"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/mondayToggle"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_marginLeft="0dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:id="@+id/startTimeIn"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="22dp"
+        android:layout_toStartOf="@+id/taskList" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/addBtn"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/profNameIn"
+        android:layout_toEndOf="@+id/mondayToggle" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to Classes"
+        android:id="@+id/taskList"
+        android:layout_alignTop="@+id/addBtn"
+        android:layout_alignEnd="@+id/sundayToggle" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:id="@+id/endTimeIn"
+        android:layout_alignTop="@+id/startTimeIn"
+        android:layout_toEndOf="@+id/startTimeIn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="End Time"
+        android:id="@+id/textView7"
+        android:layout_marginLeft="0dp"
+        android:layout_above="@+id/startTimeIn"
+        android:layout_toEndOf="@+id/startTimeIn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Name"
+        android:id="@+id/textView8"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Professor"
+        android:id="@+id/textView9"
+        android:layout_marginLeft="0dp"
+        android:layout_below="@+id/startTimeIn"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="7dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Room"
+        android:id="@+id/textView10"
+        android:layout_marginLeft="0dp"
+        android:layout_alignTop="@+id/textView9"
+        android:layout_toEndOf="@+id/startTimeIn" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/profNameIn"
+        android:layout_below="@+id/textView9"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/taskList"
+        android:layout_marginTop="22dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/roomNameIn"
+        android:layout_alignBottom="@+id/profNameIn"
+        android:layout_toEndOf="@+id/thursdayToggle" />
+
+</RelativeLayout><!-- From: file:/C:/Users/Surya/AndroidStudioProjects/StudentHelp/app/src/main/res/layout/add_class.xml -->

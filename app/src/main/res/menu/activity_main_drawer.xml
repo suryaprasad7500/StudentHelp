@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_dashboard" android:icon="@drawable/ic_dashboard"
+            android:title="Dashboard" />
+        <item android:id="@+id/nav_classes" android:icon="@drawable/ic_class_black_48dp"
+            android:title="Classes" />
+        <item android:id="@+id/nav_tasks" android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="Tasks">
+        </item>
+        <item android:id="@+id/nav_exams" android:icon="@drawable/ic_exams"
+            android:title="Exams" />
+        <!--<item android:id="@+id/nav_groups" android:icon="@drawable/ic_group"
+            android:title="Groups" />
+        <item android:title="Settings" android:id="@+id/nav_settings" android:icon="@drawable/ic_settings_black_48dp"
+            />-->
+    </group>
+
+</menu>
